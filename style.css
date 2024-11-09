@@ -138,3 +138,12 @@ article section:nth-child(4) {
 article section:nth-child(4) a {
   color: white;
 }
+
+.nomargin {
+  margin: 0;
+}
+
+.agenda {
+  font-family: Kalnia, serif;
+  font-size: 4ex;
+}
