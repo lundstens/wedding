@@ -1,5 +1,38 @@
+:root {
+  --aside-width: 250px;
+}
+
+@font-face {
+  font-family: Kalnia;
+  src: url(fonts/Kalnia-SemiBold.ttf);
+}
+
 aside#welcome {
   position: fixed;
-  height: 100%;
-  background-color: green;
+  display: block;
+
+  top: 50%;
+  right: 0px;
+
+  transform: rotate(-270deg) translateX(50%);
+  transform-origin: right top;
+  max-width: 100vh;
+  height: var(--aside-width);
+
+  background-color: white;
+  color: #5A8634;
+  font-family: Kalnia, serif;
+}
+
+aside#welcome h1 {
+  margin: 0;
+  font-size: 80px;
+}
+
+aside#welcome p {
+  margin: 0;
+}
+
+article {
+  margin-right: var(--aside-width);
 }
