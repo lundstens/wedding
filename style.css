@@ -35,4 +35,15 @@ aside#welcome p {
 
 article {
   margin-right: var(--aside-width);
+  height: 100vh;
+
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
+
+article section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100%;
+}
+
