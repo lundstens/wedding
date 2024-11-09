@@ -15,6 +15,7 @@
 body {
   background-color: white;
   overflow: hidden;
+  margin: 0;
 }
 
 /* mobile */
@@ -30,22 +31,26 @@ body {
     color: #5A8634;
     font-family: Kalnia, serif;
 
-    height: 150px;
+    height: 10vh;
     overflow: hidden;
   }
+
   aside#welcome h1 {
     margin: 0;
-    font-size: 14vw;
+    font-size: 10vw;
     font-weight: 600;
   }
 
   aside#welcome p {
+    display: inline;
+    font-family: Kufi, serif;
     margin: 0;
   }
 
   article {
-    position: relative;
-    top: 160px;
+    position: fixed;
+    top: 15vh;
+    height: 85vh;
   }
 
   article section > div {
@@ -85,6 +90,7 @@ body {
   }
 
   article {
+    height: 100vh;
     margin-right: var(--aside-width);
   }
 
@@ -94,8 +100,6 @@ body {
 }
 
 article {
-  height: 100vh;
-
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   font-family: Kufi, sans-serif;
