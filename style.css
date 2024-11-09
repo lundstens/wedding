@@ -99,7 +99,6 @@ article section {
   height: 100%;
 }
 
-/* the box that is centered */
 article section > div {
   display: flex;
   justify-content: center;
@@ -107,14 +106,6 @@ article section > div {
   height: 100%;
   width: 450px;
   margin: 0 auto;
-}
-
-article section > div > div {
-  display: table-row;
-}
-
-article section > div > div > div {
-  display: table-cell;
 }
 
 article section:nth-child(1) {
