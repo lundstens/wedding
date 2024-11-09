@@ -148,7 +148,26 @@ article section:nth-child(4) a {
   margin: 0;
 }
 
-.agenda {
+.info h2 {
   font-family: Kalnia, serif;
-  font-size: 4ex;
+}
+
+.agenda {
+  font-size: 6ex;
+  font-weight: 900;
+}
+
+.location {
+  font-size: 3ex;
+}
+
+.practicalities h2 {
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0;
+}
+
+.practicalities p {
+  font-weight: normal;
+  margin: 0;
 }
