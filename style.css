@@ -14,37 +14,78 @@
 
 body {
   background-color: white;
+  overflow: hidden;
 }
 
-aside#welcome {
-  position: fixed;
-  display: block;
+/* mobile */
+@media only screen and (max-width: 750px) {
+  aside#welcome {
+    position: fixed;
+    display: block;
 
-  top: 10px;
-  right: 0px;
+    top: 10px;
+    left: 10px;
 
-  transform: rotate(-270deg) translateX(100%);
-  transform-origin: right top;
-  width: 100vh;
-  height: var(--aside-width);
+    background-color: white;
+    color: #5A8634;
+    font-family: Kalnia, serif;
 
-  background-color: white;
-  color: #5A8634;
-  font-family: Kalnia, serif;
+    height: 150px;
+    overflow: hidden;
+  }
+  aside#welcome h1 {
+    margin: 0;
+    font-size: 14vw;
+    font-weight: 600;
+  }
+
+  aside#welcome p {
+    margin: 0;
+  }
+
+  article {
+    position: relative;
+    top: 160px;
+  }
 }
 
-aside#welcome h1 {
-  margin: 0;
-  font-size: 14vh;
-  font-weight: 600;
-}
+/* non-mobile */
+@media only screen and (min-width: 750px) {
+  aside#welcome {
+    position: fixed;
+    display: block;
 
-aside#welcome p {
-  margin: 0;
+    top: 10px;
+    right: 0px;
+
+    transform: rotate(-270deg) translateX(100%);
+    transform-origin: right top;
+    width: 100vh;
+    height: var(--aside-width);
+
+    background-color: white;
+    color: #5A8634;
+    font-family: Kalnia, serif;
+
+    overflow: hidden;
+  }
+
+  aside#welcome h1 {
+    margin: 0;
+    font-size: 14vh;
+    font-weight: 600;
+  }
+
+  aside#welcome p {
+    margin: 0;
+  }
+
+  article {
+    margin-right: var(--aside-width);
+  }
 }
 
 article {
-  margin-right: var(--aside-width);
   height: 100vh;
 
   scroll-snap-type: y mandatory;
@@ -58,10 +99,20 @@ article section {
   height: 100%;
 }
 
+article section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 450px;
+  margin: 0 auto;
+}
+
 article section:nth-child(1) {
-  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='meet'><rect width='100%' height='100%' fill='green' /><circle cx='50%' cy='50%' r='300' fill='red' /></svg>")
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='meet'><rect width='100%' height='100%' fill='green' /><circle cx='50%' cy='50%' r='300' fill='red' /></svg>");
+  color: white;
 }
 
 article section:nth-child(2) {
-  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='meet'><rect width='100%' height='100%' fill='yellow' /><circle cx='50%' cy='50%' r='300' fill='blue' /></svg>")
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='meet'><rect width='100%' height='100%' fill='yellow' /><circle cx='50%' cy='50%' r='300' fill='blue' /></svg>");
 }
