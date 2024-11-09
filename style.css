@@ -1,0 +1,5 @@
+aside#welcome {
+  position: fixed;
+  height: 100%;
+  background-color: green;
+}
