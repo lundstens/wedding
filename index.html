@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header>
-    </header>
+    <script type="text/javascript">
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      window.addEventListener('resize', () => {
+              let vh = window.innerHeight * 0.01;
+              document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+    </script>
+
     <aside id="welcome">
       <p>LUND</p>
       <p>2025.07.05</p>
@@ -46,7 +53,7 @@
       </section>
       <section>
         <div>
-        Nullam commodo accumsan sapien, quis porttitor odio vulputate ut. Integer eleifend convallis elit sed tempus. Maecenas orci ipsum, vestibulum vel urna in, malesuada porta mauris. Pellentesque mollis diam ac nisl commodo sodales. Suspendisse sollicitudin a est id pellentesque. Vestibulum velit nibh, finibus eget mauris non, sodales varius odio. Praesent egestas, diam at pharetra iaculis, urna lacus pretium diam, et molestie libero risus vel turpis. Maecenas faucibus lectus sed facilisis mollis. Aliquam laoreet est diam, et maximus mauris porttitor ut.
+          Nullam commodo accumsan sapien, quis porttitor odio vulputate ut. Integer eleifend convallis elit sed tempus. Maecenas orci ipsum, vestibulum vel urna in, malesuada porta mauris. Pellentesque mollis diam ac nisl commodo sodales. Suspendisse sollicitudin a est id pellentesque. Vestibulum velit nibh, finibus eget mauris non, sodales varius odio. Praesent egestas, diam at pharetra iaculis, urna lacus pretium diam, et molestie libero risus vel turpis. Maecenas faucibus lectus sed facilisis mollis. Aliquam laoreet est diam, et maximus mauris porttitor ut.
         </div>
       </section>
       <section>

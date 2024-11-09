@@ -51,6 +51,7 @@ body {
     position: fixed;
     top: 12vh;
     height: 88vh;
+    height: calc(var(--vh, 1vh) * 88);
   }
 
   article section > div {
