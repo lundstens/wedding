@@ -47,6 +47,10 @@ body {
     position: relative;
     top: 160px;
   }
+
+  article section > div {
+    max-width: 90%; 
+  }
 }
 
 /* non-mobile */
@@ -83,6 +87,10 @@ body {
   article {
     margin-right: var(--aside-width);
   }
+
+  article section > div {
+    max-width: 450px;
+  }
 }
 
 article {
@@ -104,7 +112,6 @@ article section > div {
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 450px;
   margin: 0 auto;
 }
 
