@@ -88,7 +88,7 @@ body {
 
   aside#welcome p {
     margin: 0;
-    font-family: Kufi, sans-serif;
+    font-family: Kufi, serif;
   }
 
   article {
@@ -119,6 +119,18 @@ article section > div {
   align-items: center;
   height: 100%;
   margin: 0 auto;
+}
+
+p, h2 {
+  font-family: Kufi, sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0em;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
 }
 
 article section:nth-child(1) {
@@ -163,32 +175,22 @@ article section:nth-child(6) a {
   color: #e55d14;
 }
 
-
-
-.nomargin {
-  margin: 0;
-}
-
-.info h2 {
-  font-family: Kalnia, serif;
+.with-margin {
+  margin-bottom: 2em;
 }
 
 .agenda {
+  width: 45%;
+  flex: none;
+  text-transform: uppercase;
+}
+
+.agenda h2 {
+  font-family: Kalnia, serif;
   font-size: 6ex;
-  font-weight: 900;
+  margin-bottom: 0;
 }
 
 .location {
   font-size: 3ex;
-}
-
-.practicalities h2 {
-  font-weight: normal;
-  font-size: 1em;
-  margin: 0;
-}
-
-.practicalities p {
-  font-weight: normal;
-  margin: 0;
 }
