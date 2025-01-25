@@ -1,5 +1,5 @@
 :root {
-  --aside-width: 200px;
+  --aside-width: 180px;
 }
 
 @font-face {
@@ -39,6 +39,7 @@ body {
     margin: 0;
     font-size: 13vw;
     font-weight: 600;
+    line-height: 1;
   }
 
   aside#welcome p {
@@ -84,6 +85,7 @@ body {
     margin: 0;
     font-size: 14vh;
     font-weight: 600;
+    line-height: 1;
   }
 
   aside#welcome p {
@@ -143,8 +145,16 @@ article section:nth-child(2) {
   color: #d1c6aa;
 }
 
+article section:nth-child(2) a {
+  color: #d1c6aa;
+}
+
 article section:nth-child(3) {
   background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='meet'><rect width='100%' height='100%' fill='%23ab895c' /><circle cx='50%' cy='50%' r='300' fill='%23cbba9b' /></svg>");
+  color: #616161;
+}
+
+article section:nth-child(3) a {
   color: #616161;
 }
 
@@ -154,7 +164,7 @@ article section:nth-child(4) {
 }
 
 article section:nth-child(4) a {
-  color: white;
+  color: #848862;
 }
 
 article section:nth-child(5) {
@@ -168,11 +178,11 @@ article section:nth-child(5) a {
 
 article section:nth-child(6) {
   background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='meet'><rect width='100%' height='100%' fill='%23848862' /><circle cx='50%' cy='50%' r='300' fill='%23d1c6ac' /></svg>");
-  color: #;
+  color: #848862;
 }
 
 article section:nth-child(6) a {
-  color: #e55d14;
+  color: #848862;
 }
 
 .with-margin {
