@@ -204,11 +204,3 @@ article section:nth-child(6) a {
 .location {
   font-size: 3ex;
 }
-
-div#scrolla {
-  position: absolute;
-  bottom: 1em;
-  left: 40%;
-  font-size: 1em;
-  color: white;
-}
